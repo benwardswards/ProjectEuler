@@ -5,7 +5,9 @@
 # of the numbers from 1 to 20?
 from numba import jit
 from functools import reduce
+from utils import gcd, lcm
 
+# or from math import gcd
 # This is way too slow:
 @jit(nopython=True)
 def divides_2to20(count):
@@ -17,21 +19,6 @@ def divides_2to20(count):
         if i == 20:
             found = False
     return found
-
-
-def gcd(a: int, b: int) -> int:
-    """Compute the greatest common divisor of a and b"""
-    while b > 0:
-        # print(a, b, a % b)
-        a, b = b, a % b
-
-    # print(a)
-    return a
-
-
-def lcm(a: int, b: int) -> int:
-    """Compute the lowest common multiple of a and b"""
-    return a * b // gcd(a, b)
 
 
 assert lcm(5, 2) == 10

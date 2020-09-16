@@ -1,7 +1,5 @@
 # find sum of all even fibonacci numbers below 4 million
 
-import numpy as np
-
 fib1: int = 1
 fib2: int = 2
 sumofevenfibs: int = 0
