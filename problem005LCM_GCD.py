@@ -8,6 +8,7 @@ from functools import reduce
 from utils import gcd, lcm
 
 # or from math import gcd
+
 # This is way too slow:
 @jit(nopython=True)
 def divides_2to20(count):
