@@ -38,7 +38,7 @@ print(f"Before sorting the first name is : ", names[0][0])
 
 names2.sort()
 print("after sorting first name is:", names2[0])
-
+g
 
 score: int = 0
 for iname, name in enumerate(names2):
