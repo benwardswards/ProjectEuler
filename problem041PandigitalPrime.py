@@ -36,7 +36,6 @@ while not isPrime(
 ):  # Decreases the number of digits to be found then gernerates the numbers.
     for i in permutations(listofdigits, numberofdigits):
         num = int(reduce(lambda a, b: a + b, i))  # adding strings to make digit
-        # print(num)
         if isPrime(num):
             print(num, "is prime and pandigit")
             found_a_prime = True
